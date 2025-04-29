@@ -36,18 +36,43 @@ Figure 02  Encoder 8 * 3
 
 **Procedure**
 
-/* write all the steps invloved */
 
+Start the module: Declare module with 8-bit input and 3-bit output.
+
+Use assign: Dataflow modeling uses assign statements (not always).
+
+Encode inputs: Use conditional (? :) or logical expressions to assign 3-bit output based on the highest active input.
+
+Priority: Ensure input[7] has the highest priority, down to input[0].
+
+Binary code: Assign output bits as binary code corresponding to active input.
+
+No simultaneous inputs: Assume only one input is high at a time.
+
+End module: Close the module definition.
+
+Testbench: (Optional) Create a testbench to verify the encoder's output for each input.
 **PROGRAM**
+```
+module enc(a,b,c,y0,y1,y2,y3,y4,y5,y6,y7);
+input y0,y1,y2,y3,y4,y5,y6,y7;
+output a,b,c;
+assign a= (y4 | y5 | y6 | y7);
+assign b= (y2 | y3 | y6 | y7);
+assign c= (y1 | y3 | y5 | y7);
+endmodule
 
-/* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
+```
 
-Developed by: RegisterNumber:
-*/
+
+Developed by: RegisterNumber:212224220113
+
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
+![de enc](https://github.com/user-attachments/assets/e2c71e43-dd70-487f-a523-4844137e9b4a)
 
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
+![die enc](https://github.com/user-attachments/assets/40625e10-b908-406e-803f-813945c5e6ea)
 
 **RESULTS**
 
