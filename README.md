@@ -76,6 +76,6 @@ Developed by: RegisterNumber:212224220113
 
 **RESULTS**
 
-
+Thus the Encoder 8 To 3 in Dataflow Modelling using verilog are verified and the logic diagrams are designed and the truth table is verified.
 
 
