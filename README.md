@@ -72,7 +72,8 @@ Developed by: RegisterNumber:212224220113
 ![de enc](https://github.com/user-attachments/assets/e2c71e43-dd70-487f-a523-4844137e9b4a)
 
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
-![die enc](https://github.com/user-attachments/assets/40625e10-b908-406e-803f-813945c5e6ea)
+![image](https://github.com/user-attachments/assets/92a209f6-a875-4779-9b44-9a78f81ea8af)
+
 
 **RESULTS**
 
